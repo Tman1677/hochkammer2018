@@ -21,12 +21,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '4_s*n+9bu5dvgz3dc=gv+s6&d=b+)6m4p=lp&in9deg1q!^uf)'
+if not "HEROKU" in os.environ:
+    SECRET_KEY = '4_s*n+9bu5dvgz3dc=gv+s6&d=b+)6m4p=lp&in9deg1q!^uf)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if "HEROKU" in os.environ:
+    DEBUG = os.environ.get("DEBUG:")
+else:
+    DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -74,14 +79,10 @@ WSGI_APPLICATION = 'hockamer.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
+if "HEROKU" in os.environ:
+    DATABASES = {}
+else:
+    DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3','NAME': os.path.join(BASE_DIR, 'db.sqlite3'),}}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -107,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Detroit'
 
 USE_I18N = True
 
@@ -122,4 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+if "HEROKU" in os.environ:
+    django_heroku.settings(locals())
