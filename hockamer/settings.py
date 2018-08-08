@@ -26,7 +26,7 @@ if not "HEROKU" in os.environ:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if "HEROKU" in os.environ:
-    DEBUG = os.environ.get("DEBUG:")
+    DEBUG = os.environ.get("DEBUG")
 else:
     DEBUG = True
 
