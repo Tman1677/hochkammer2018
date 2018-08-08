@@ -121,9 +121,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 THIS_FILES_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.join(THIS_FILES_DIR, "..")
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(THIS_FILES_DIR, "../images"),
+    os.path.join(THIS_FILES_DIR, "images"),
+    os.path.join(THIS_FILES_DIR, "css"),
 ]
 
 # Activate Django-Heroku.
