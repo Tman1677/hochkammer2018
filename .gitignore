@@ -1,4 +1,2 @@
-/env
 *.sqlite3
 *.DS_Store
-/bootstrap-4.1.3
