@@ -1,1 +1,1 @@
-#mainCarousel{position:relative;display:flex;justify-content:center;align-items:center}#innerCarousel{z-index:0}#overlayCarousel{position:absolute;z-index:10}
+body{font-family:'Open Sans', sans-serif;padding-top:56px}#mainCarousel{position:relative;display:flex;justify-content:center;align-items:center}#innerCarousel{z-index:0}#overlayCarousel{position:absolute;z-index:10}

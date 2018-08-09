@@ -1,28 +1,28 @@
 /*
-	Custom modifications to the bootstrap scss
-	generally used to change colors and other
-	basic changes that are core to bootstrap
+	Custom modifications that use bootstrap variables
 */
+
 h1.variableHeader {
 	font-size: 2em;
+	font-weight: 700;
 }
 @include media-breakpoint-up(sm) {
 	h1.variableHeader {
-		font-size: 4em;
+		font-size: 3.5em;
 	}
 }
 @include media-breakpoint-up(md) {
 	h1.variableHeader {
-		font-size: 6em;
+		font-size: 68px;
 	}
 }
 .semi-t-rect {
-		background-color: hsla(0, 0%, 0%, 0.7);
-		border-radius: 2vw;
+		background-color: rgba($black, 0.5);
+		border-radius: 1vw;
 	}
 @include media-breakpoint-down(xs) {
 	.semi-t-rect {
-		background-color: hsla(0, 0%, 0%, 0.7);
+		background-color: rgba($black, 0.5);
 		border-radius: 0px;
 		display:flex;
 		justify-content:center;
@@ -34,11 +34,6 @@ h1.variableHeader {
 
 @include media-breakpoint-up(lg) {
 	#overlayCarousel {
-    top:140px !important; 
-	}
-}
-@include media-breakpoint-up(xl) {
-	#overlayCarousel {
-    top:160px !important; 
+    top:25% !important; 
 	}
 }

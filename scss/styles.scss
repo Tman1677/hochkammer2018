@@ -1,4 +1,9 @@
 /* Add sass here for it to be loaded in every page */
+body {
+		font-family: 'Open Sans', sans-serif;
+		padding-top: 56px;
+}
+
 #mainCarousel {
 	position: relative;
 	display: flex;
@@ -14,3 +19,6 @@
     position: absolute;
     z-index: 10;
 }
+
+
+
