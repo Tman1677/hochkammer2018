@@ -1,0 +1,11 @@
+{
+    "output": {
+        "dir": "css-min",
+        "structure": "flat"
+    },
+    "compile": {
+        "line-comments": true,
+        "line-numbers":  true,
+        "style":         "compressed", // Comments allowed in `.libsass.json`, but not `*.sublime-settings`
+    }
+}

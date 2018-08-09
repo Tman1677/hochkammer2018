@@ -1,1 +1,16 @@
 /* Add sass here for it to be loaded in every page */
+#mainCarousel {
+	position: relative;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#innerCarousel {
+	z-index: 0;
+}
+
+#overlayCarousel {
+    position: absolute;
+    z-index: 10;
+}
