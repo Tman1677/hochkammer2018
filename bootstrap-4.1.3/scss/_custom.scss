@@ -3,5 +3,42 @@
 	generally used to change colors and other
 	basic changes that are core to bootstrap
 */
+h1.variableHeader {
+	font-size: 2em;
+}
+@include media-breakpoint-up(sm) {
+	h1.variableHeader {
+		font-size: 4em;
+	}
+}
+@include media-breakpoint-up(md) {
+	h1.variableHeader {
+		font-size: 6em;
+	}
+}
+.semi-t-rect {
+		background-color: hsla(0, 0%, 0%, 0.7);
+		border-radius: 2vw;
+	}
+@include media-breakpoint-down(xs) {
+	.semi-t-rect {
+		background-color: hsla(0, 0%, 0%, 0.7);
+		border-radius: 0px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height: 100%;
+		width:100%;
+}
+}
 
-
+@include media-breakpoint-up(lg) {
+	#overlayCarousel {
+    top:140px !important; 
+	}
+}
+@include media-breakpoint-up(xl) {
+	#overlayCarousel {
+    top:160px !important; 
+	}
+}
