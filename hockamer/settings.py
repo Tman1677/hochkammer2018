@@ -126,7 +126,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, "images"),
     os.path.join(PROJECT_ROOT, "css-min"),
-    os.path.join(PROJECT_ROOT, "js"),
 ]
 
 # Activate Django-Heroku.
