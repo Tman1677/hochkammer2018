@@ -6311,37 +6311,3 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-
-/*
-	Custom modifications that use bootstrap variables
-*/
-h1.variableHeader {
-  font-size: 2em;
-  font-weight: 700; }
-
-@media (min-width: 576px) {
-  h1.variableHeader {
-    font-size: 3.5em; } }
-
-@media (min-width: 768px) {
-  h1.variableHeader {
-    font-size: 68px; } }
-
-.semi-t-rect {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 1vw; }
-
-@media (max-width: 575.98px) {
-  .semi-t-rect {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 0 100px 100px #000; } }
-
-@media (min-width: 992px) {
-  #overlayCarousel {
-    top: 25% !important; } }
