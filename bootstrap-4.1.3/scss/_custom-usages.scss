@@ -29,7 +29,8 @@ h1.variableHeader {
 		align-items:center;
 		height: 100%;
 		width:100%;
-}
+		box-shadow: 0 0 100px 100px $black;
+	}
 }
 
 @include media-breakpoint-up(lg) {
