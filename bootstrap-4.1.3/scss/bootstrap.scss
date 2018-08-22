@@ -7,7 +7,6 @@
 
 @import "functions";
 @import "variables";
-@import "custom-variables";
 @import "mixins";
 @import "root";
 @import "reboot";
@@ -41,4 +40,4 @@
 @import "carousel";
 @import "utilities";
 @import "print";
-@import "custom-usages"; //custom edits to the bootstrap css
+@import "custom"; //custom edits to the bootstrap css
