@@ -57,12 +57,21 @@ h3.variableHeader {
 	}
 }
 
+.bg-light-t {
+	background-color: rgba($light, 0.7);
+}
 
+.bg-gradient {
+		background-image: linear-gradient(to bottom right, $dgreen, $lgreen);
+}
 body {
 		font-family: 'Open Sans', sans-serif;
 		padding-top: 56px;
 }
 
+.blur-edges {
+	box-shadow: 0 0 25px 25px rgba($light, 0.7);
+}
 #mainCarousel {
 	position: relative;
 	display: flex;
