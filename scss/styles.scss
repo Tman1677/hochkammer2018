@@ -33,6 +33,10 @@ h3.variableHeader {
 	padding-right: 10vw;
 	padding-left: 10vw;
 }
+.max-width {
+	height: auto;
+	width: 100%;
+}
 
 .semi-t-rect {
 		background-color: rgba($black, 0.5);
@@ -58,7 +62,16 @@ h3.variableHeader {
 }
 
 .bg-light-t {
-	background-color: rgba($light, 0.8);
+	$transparency : 1;
+	background-color: rgba($light, $transparency);
+	@include media-breakpoint-up(md) {
+		box-shadow: 0 0 4vw 4vw rgba($light, $transparency);
+		$marginAmount : 8vw;
+		margin-right: $marginAmount;
+		margin-left: $marginAmount;
+	}
+
+	
 }
 
 .bg-gradient {
@@ -69,9 +82,6 @@ body {
 		padding-top: 56px;
 }
 
-.blur-edges {
-	box-shadow: 0 0 25px 25px rgba($light, 0.7);
-}
 #mainCarousel {
 	position: relative;
 	display: flex;
