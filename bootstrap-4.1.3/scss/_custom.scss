@@ -20,7 +20,6 @@ $theme-colors: () !default;
 
 $theme-colors: map-merge(
   (
-    "darker" : $darker,
     "lgreen" : $lgreen,
 	"dgreen" : $dgreen,
   ),
