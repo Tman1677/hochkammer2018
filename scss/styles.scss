@@ -65,7 +65,7 @@ h3.variableHeader {
 	$transparency : 1;
 	background-color: rgba($light, $transparency);
 	@include media-breakpoint-up(md) {
-		box-shadow: 0 4vw 4vw 4vw rgba($light, $transparency);
+		box-shadow: 0 0 4vw 4vw rgba($light, $transparency);
 		$marginAmount : 8vw;
 		margin-right: $marginAmount;
 		margin-left: $marginAmount;
