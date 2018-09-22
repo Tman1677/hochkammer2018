@@ -13,15 +13,15 @@ $black:    #000 !default;
 
 $dark : $gray-800;
 $darker : $gray-900;
-$lgreen : #8cc63f;
-$dgreen : #259a47;
+$lblue : #8cc63f;
+$dblue : #8cc63f;
 
 $theme-colors: () !default;
 
 $theme-colors: map-merge(
   (
-    "lgreen" : $lgreen,
-	"dgreen" : $dgreen,
+    "lblue" : $lblue,
+	  "dblue" : $dblue,
   ),
   $theme-colors
 );
