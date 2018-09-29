@@ -7,20 +7,29 @@
 		<div id="innerCarousel" class="carousel-inner">
 			<div class="carousel-item active">
 				<picture>
-					<!--replace with lower res images when ready -->
-					<img class="d-block w-100" src="{% static "carousel/1.jpg" %}" alt="first image">
+					<source media="(min-width: 768px)" srcset="{% static "carousel/1-768x360.jpg" %}">
+					<source media="(min-width: 1024px)" srcset="{% static "carousel/1-1024x480.jpg" %}">
+					<source media="(min-width: 1536px)" srcset="{% static "carousel/1-1536x720.jpg" %}">
+					<img class="d-block w-100" src="{% static "carousel/1-2048x960.jpg" %}" alt="first image">
 				</picture>
 			</div>
 			<div class="carousel-item">
 				<picture>
-					<!--replace with lower res images when ready -->
-					<img class="d-block w-100" src="{% static "carousel/2.jpg" %}" alt="second image">
+					<source media="(min-width: 768px)" srcset="{% static "carousel/2-768x360.jpg" %}">
+					<source media="(min-width: 1024px)" srcset="{% static "carousel/2-1024x480.jpg" %}">
+					<source media="(min-width: 1536px)" srcset="{% static "carousel/2-1536x720.jpg" %}">
+					<source media="(min-width: 2048px)" srcset="{% static "carousel/2-2048x960.jpg" %}">
+					<img class="d-block w-100" src="{% static "carousel/2-3072x1440.jpg.jpg" %}" alt="second image">
 				</picture>
 			</div>
 			<div class="carousel-item">
 				<picture>
-					<!--replace with lower res images when ready -->
-					<img class="d-block w-100" src="{% static "carousel/3.jpg" %}" alt="third image">
+					<source media="(min-width: 768px)" srcset="{% static "carousel/3-768x360.jpg" %}">
+					<source media="(min-width: 1024px)" srcset="{% static "carousel/3-1024x480.jpg" %}">
+					<source media="(min-width: 1536px)" srcset="{% static "carousel/3-1536x720.jpg" %}">
+					<source media="(min-width: 2048px)" srcset="{% static "carousel/3-2048x960.jpg" %}">
+					<source media="(min-width: 3072px)" srcset="{% static "carousel/3-3072x1440.jpg" %}">
+					<img class="d-block w-100" src="{% static "carousel/3-5184x2430.jpg" %}" alt="third image">
 				</picture>
 			</div>
 		</div>
